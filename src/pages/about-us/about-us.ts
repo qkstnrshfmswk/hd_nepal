@@ -4,6 +4,7 @@ import {Nav, Platform} from 'ionic-angular';
 import {Slides} from 'ionic-angular';
 import {CallNumber} from '@ionic-native/call-number';
 import { EmailComposer } from '@ionic-native/email-composer';
+import { Http } from '@angular/http';
 
 
 @IonicPage()
@@ -18,13 +19,33 @@ export class AboutUsPage {
 	
     @ViewChild(Nav) nav: Nav;
     contactNo:any=7376421282;
-
-
+  
+  public info_description;
+  public info_data:any;
+  public info_img:string;
   constructor(public platform: Platform,
               public navCtrl: NavController,
               public navParams: NavParams,
               public callNumber:CallNumber,
-              public emailComposer:EmailComposer) {}
+              public emailComposer:EmailComposer,
+              public http:Http)
+{
+    this.http.get('http://ec2-34-224-40-186.compute-1.amazonaws.com:3000/museum_info/')
+        .subscribe(
+        data =>
+        {
+          this.info_description = data.json();
+          console.log(this.info_description);
+          this.info_data = this.info_description[0].info;
+          this.info_img = this.info_description[0].info_img;
+          console.log(this.info_data);
+        },
+        error =>
+        {
+          console.log("error");
+        });
+
+}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AboutUsPage');

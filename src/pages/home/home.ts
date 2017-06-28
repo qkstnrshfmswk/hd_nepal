@@ -2,6 +2,9 @@ import {Component} from '@angular/core';
 import {NavController,IonicPage} from 'ionic-angular';
 import {Service} from '../../app/service';
 import { Http } from '@angular/http';
+import { AboutUsPage } from '../about-us/about-us';
+
+
 
 @IonicPage()
 @Component({
@@ -55,6 +58,11 @@ export class HomePage {
 
     navcart() {
         this.navCtrl.push("CartPage");
+    }
+
+    navAbout()
+    {
+        this.navCtrl.push("AboutUsPage");
     }
 
 }

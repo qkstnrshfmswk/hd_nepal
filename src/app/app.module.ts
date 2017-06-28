@@ -9,7 +9,6 @@ import {TranslateModule, TranslateStaticLoader, TranslateLoader} from 'ng2-trans
 import {Http, HttpModule} from '@angular/http';
 import {BrowserModule} from "@angular/platform-browser";
 
-
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, './assets/i18n', '.json');
 }

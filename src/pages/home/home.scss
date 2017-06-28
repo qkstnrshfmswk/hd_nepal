@@ -1,4 +1,10 @@
 page-home {
+  ion-header{
+    ion-title{
+        font-family: "notoR";
+    }
+  }
+
   .search{
     width: 6%;
   }
@@ -6,6 +12,9 @@ page-home {
   /*slider*/
   .grid {
     padding: 0px;
+    h2{
+        font-family: "notoR";
+    }
     .slides {
       .overlay {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));

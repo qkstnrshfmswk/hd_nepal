@@ -14,7 +14,11 @@ export class HomePage {
     featured: any[] = [];
     cartItems: any[];
     noOfItems: number;
-    
+
+    main_icon:any[] = [{"icon_img":"assets\\img\\about-02.png"}, 
+                        {"icon_img":"assets\\img\\Exhibition-02.png"},
+                        {"icon_img":"assets\\img\\Map-02.png"},
+                        {"icon_img":"assets\\img\\Facilities-02.png"}];
     main_img;
     
     constructor(public navCtrl: NavController, public service: Service, public http:Http) {

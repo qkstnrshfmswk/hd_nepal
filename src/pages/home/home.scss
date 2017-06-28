@@ -61,10 +61,19 @@ page-home {
       }
       img {
         height: 110px;
-        width: 100%;
+       
         position: relative;
         z-index: -111;
       }
+
+      figcaption{
+        text-align:center;
+      }
+
+      .img-with-text {
+        text-align: justify;
+      }
+
       .text-over-img {
         color: #F4F4F4;
         font-size: 18px;

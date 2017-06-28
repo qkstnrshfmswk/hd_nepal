@@ -12,7 +12,7 @@
 </ion-header>
 <ion-content>
     <ion-list>
-        <ion-item (click)="newsDetail(news.id)" *ngFor="let categories of exhibit_list">
+        <ion-item (click)="gotoSection(categories.id)" *ngFor="let categories of exhibit_list">
             <ion-thumbnail item-left>
                 <img class="thumbnail-img" src="{{categories.exhibit_img}}">
             </ion-thumbnail>

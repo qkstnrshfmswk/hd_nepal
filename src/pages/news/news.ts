@@ -47,4 +47,10 @@ export class NewsPage {
         });
     }
 
+    gotoSection(exhibitID){
+        this.navCtrl.push("SectionPage", {
+            
+        })
+    }
+
 }

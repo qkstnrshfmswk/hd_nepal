@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {NavController, NavParams,IonicPage} from 'ionic-angular';
 import {Service} from '../../app/service';
 import { Http } from '@angular/http';
-
+import { CategoryPage } from '../category/category';
 
 @IonicPage()
 @Component({
@@ -48,9 +48,8 @@ export class NewsPage {
     }
 
     gotoSection(exhibitID){
-        this.navCtrl.push("SectionPage", {
-            
-        })
+      console.log("exhibit "+ exhibitID);
+      this.navCtrl.push(CategoryPage, {ID:exhibitID});
     }
 
 }

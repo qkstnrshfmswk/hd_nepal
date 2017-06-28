@@ -11,4 +11,43 @@ page-category {
     height: 5em;
     width: 5em;
   }
+
+    .title{
+    font-family: "notoR";
+  }
+  .search{
+    width: 6%;
+  }
+
+    .card-title {
+    font-family: "notoR";
+    position: absolute;
+    top: 28%;
+    font-size: 20.5pt;
+    width: 100%;
+    font-weight: bold;
+    color:white;
+    left: 21.5px;
+  }
+
+  .card-subtitle{
+    font-family: "notoR";
+    position: absolute;
+    top: 28%;
+    font-size: 15pt;
+    width: 100%;
+    font-weight: bold;
+    color:white;
+    left: 21.5px;
+  }
+
+    .details {
+    font-family: "notoR";
+    font-size:9.5pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.3;    //줄간격
+    text-align: justify;  //양쪽 정렬
+  }
+  
 }

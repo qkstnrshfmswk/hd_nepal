@@ -5,6 +5,7 @@ import { Http } from '@angular/http';
 import { AboutUsPage } from '../about-us/about-us';
 import { NewsPage } from '../news/news';
 
+
 @IonicPage()
 @Component({
     selector: 'page-home',

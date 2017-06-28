@@ -8,14 +8,16 @@ import {IonicStorageModule} from '@ionic/storage';
 import {TranslateModule, TranslateStaticLoader, TranslateLoader} from 'ng2-translate/ng2-translate';
 import {Http, HttpModule} from '@angular/http';
 import {BrowserModule} from "@angular/platform-browser";
-
+import { CategoryPage } from '../pages/category/category';
+//entry point에 추가
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, './assets/i18n', '.json');
 }
 
 @NgModule({
     declarations: [
-        MyApp
+        MyApp,
+        CategoryPage
     ],
     imports: [
         IonicModule.forRoot(MyApp),
@@ -33,7 +35,8 @@ export function createTranslateLoader(http: Http) {
     exports: [BrowserModule, HttpModule, TranslateModule],
     bootstrap: [IonicApp],
     entryComponents: [
-        MyApp
+        MyApp,
+        CategoryPage
     ],
     providers: [
         {provide: ErrorHandler, useClass: IonicErrorHandler},

@@ -1,22 +1,31 @@
 <ion-header>
     <ion-navbar>
-        <button ion-button menuToggle>
-            <ion-icon name="menu"></ion-icon>
+   <!--   <ion-buttons>
+        <button ion-button icon-only (click)="navHome()">
+          <ion-icon name="arrow-back"></ion-icon>
         </button>
-        <ion-title>Category</ion-title>
+      </ion-buttons>
+      -->
+        <ion-title class="title">IMM</ion-title>
+          <img align="right" src="assets/img/search.png" class="search" (click)="gotoSearch()">
     </ion-navbar>
 </ion-header>
 
+
 <ion-content>
-    <ion-card *ngFor="let categorie of categories">
-        <ion-list>
-            <ion-item (click)="navigate(categorie.key)">
-                <ion-thumbnail item-left>
-                    <img src="{{categorie.thumb}}">
-                </ion-thumbnail>
-                <p class="heading">{{categorie.title}}</p>
-                <p>{{categorie.description}}</p>
-            </ion-item>
-        </ion-list>
-    </ion-card>
+
+    <img src="{{img}}" class="card-img">
+    <div class ="card-subtitle"> {{loc}}</div>
+       <div class="card-title">
+         <p *ngFor="let lines of name"> {{lines.line}} </p>
+      </div> 
+
+<!--about-->
+<div class="content">
+    <p [innerHTML]="desc" class="details">
+    	{{desc}}
+    </p>
+
+   </div> 
 </ion-content>
+

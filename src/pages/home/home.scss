@@ -1,10 +1,8 @@
 page-home {
-  ion-header{
-    ion-title{
-        font-family: "notoR";
-    }
+  .title{
+    font-size: 16pt;
+    font-family: "notoR";
   }
-
   .search{
     width: 6%;
   }
@@ -13,7 +11,8 @@ page-home {
   .grid {
     padding: 0px;
     h2{
-        font-family: "notoR";
+        font-size: 38pt;
+        font-family: "notoB";
     }
     .slides {
       .overlay {
@@ -26,65 +25,23 @@ page-home {
         position: relative;
         z-index: -111;
       }
-      .slider-text {
-        color: #F4F4F4;
-        font-size: 22px;
-        padding: 5px;
-        position: absolute;
-        bottom: 0;
-        margin: 5px 0px;
-      }
       .swiper-pagination-bullet {
         background: $primary !important;
       }
     }
 
-    //banner image
-    .card-title {
-      position: absolute;
-      top: 36%;
-      font-size: 2.0em;
-      width: 100%;
-      font-weight: bold;
-      color: #F4F4F4;
-    }
-
     /*Categories*/
 
     .categories {
-      flex-wrap: wrap;
-      h2 {
-        margin-top: -12px;
-        font-size: 2.7rem;
-        color: rgba(66, 66, 66, 0.87);
-        font-weight: 500;
+      ion-col{
+        background-color: #F4F4F4;
       }
       img {
         height: 110px;
-       
         position: relative;
-        z-index: -111;
+        z-index: 1;
       }
 
-      figcaption{
-        text-align:center;
-      }
-
-      .img-with-text {
-        text-align: justify;
-      }
-
-      .text-over-img {
-        color: #F4F4F4;
-        font-size: 18px;
-        padding: 5px;
-        background-color: rgba(119, 119, 119, 0.6);
-        position: relative;
-        width: 100%;
-        margin: -34px 0px 0px 0px;
-        text-align: center;
-
-      }
     }
   }
 }

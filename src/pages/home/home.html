@@ -1,11 +1,11 @@
 <ion-header>
     <ion-navbar hideBackButton="true">
-        <ion-title>IMM</ion-title>
+        <ion-title class="title">IMM</ion-title>
         <img align="right" src="assets/img/search.png" class="search">
     </ion-navbar>
 </ion-header>
 
-<ion-content style = "background-color:#F4F4F4;">
+<ion-content style = "background-color:#FFF;">
     <ion-grid class="grid">
         <ion-row><!-- first row -->
             <ion-slides initialSlide=0 speed="500" loop="true" pager="true">
@@ -13,15 +13,14 @@
                         <img src="{{img_list.img_path}}" class="slider-img">
                 </ion-slide>
             </ion-slides>
-        </ion-row><!-- first row -->
+        </ion-row>
         <!-- second-row -->
-
         <ion-row >
             <div style="width: 100%; vertical-align: middle;">
                 <h2 style="text-align: center; color: #1C49AD">{{'International Mountain Museum' | translate}}</h2>
             </div>
-
         </ion-row>
+
         <ion-row class="categories">
             <ion-col (click)="navigate(categorie.key)">
                 <figure>

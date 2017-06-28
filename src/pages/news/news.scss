@@ -1,8 +1,42 @@
 page-news {
+
+  .title{
+    font-family: "notoR";
+  }
+  .search{
+    width: 6%;
+  }
   .item-block {
     align-items: flex-start !important;
   }
   ion-label {
     white-space: initial !important;
+  }
+  ion-thumbnail, ion-item{
+    margin: 0px !important;
+    padding:0px !important;
+  }
+  .thumbnail-img{
+    padding:0px !important;
+    margin:0px !important;
+    height:97px !important;
+    width:142px !important;
+  } 
+  .list-content{
+    margin-left: 13px;
+    margin-top: 3px;
+    font-family:"notoR";
+  }
+  h2{
+    margin-bottom:8px !important;
+    color:#1C49AD !important;
+    font-size:12pt;
+  }
+
+  .exhibition-name{
+    font-weight:bold;
+    font-size:15pt;
+    color:black;
+    line-height: 1;    //줄간격
   }
 }

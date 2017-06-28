@@ -1,20 +1,25 @@
 <ion-header>
     <ion-navbar>
-        <button ion-button menuToggle>
-            <ion-icon name="menu"></ion-icon>
+   <!--   <ion-buttons>
+        <button ion-button icon-only (click)="navHome()">
+          <ion-icon name="arrow-back"></ion-icon>
         </button>
-        <ion-title>{{'News'|translate}}</ion-title>
+      </ion-buttons>
+      -->
+        <ion-title class="title">IMM</ion-title>
+          <img align="right" src="assets/img/search.png" class="search" (click)="gotoSearch()">
     </ion-navbar>
 </ion-header>
-
 <ion-content>
     <ion-list>
-        <ion-item (click)="newsDetail(news.id)" *ngFor="let news of newsList">
+        <ion-item (click)="newsDetail(news.id)" *ngFor="let categories of exhibit_list">
             <ion-thumbnail item-left>
-                <img src="{{news.image}}">
+                <img class="thumbnail-img" src="{{categories.exhibit_img}}">
             </ion-thumbnail>
-            <h2>{{news.title}} </h2>
-            <p>{{news.discription}}</p>
+            <div class ="list-content">
+            <h2>{{categories.exhibit_loc}} </h2>
+            <p class="exhibition-name" *ngFor="let name of categories.exhibit_name">{{name.line}} <br> </p>
+            </div>
         </ion-item>
     </ion-list>
 </ion-content>

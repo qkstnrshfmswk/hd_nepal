@@ -3,8 +3,7 @@ import {NavController,IonicPage} from 'ionic-angular';
 import {Service} from '../../app/service';
 import { Http } from '@angular/http';
 import { AboutUsPage } from '../about-us/about-us';
-
-
+import { NewsPage } from '../news/news';
 
 @IonicPage()
 @Component({
@@ -63,6 +62,10 @@ export class HomePage {
     navAbout()
     {
         this.navCtrl.push("AboutUsPage");
+    }
+
+   navExhibition(){
+        this.navCtrl.push("NewsPage");
     }
 
 }

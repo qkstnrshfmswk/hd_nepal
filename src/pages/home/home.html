@@ -1,32 +1,24 @@
 <ion-header>
     <ion-navbar hideBackButton="true">
-        <button ion-button menuToggle>
-            <ion-icon name="menu"></ion-icon>
-        </button>
         <ion-title>IMM</ion-title>
-        <ion-buttons end>
-            <button ion-button icon-only color="royal" (click)="navcart()">
-                <ion-icon name="cart"></ion-icon>
-                <ion-badge class="carts" item-right color="danger">{{noOfItems}}</ion-badge>
-            </button>
-        </ion-buttons>
+        <img align="right" src="assets/img/search.png" class="search">
     </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content style = "background-color:#F4F4F4;">
     <ion-grid class="grid">
         <ion-row><!-- first row -->
             <ion-slides initialSlide=0 speed="500" loop="true" pager="true">
                 <ion-slide *ngFor="let img_list of main_img">
-                    
                         <img src="{{img_list.img_path}}" class="slider-img">
-                
                 </ion-slide>
             </ion-slides>
         </ion-row><!-- first row -->
         <!-- second-row -->
-        <ion-row center style = "text-align: center; background-color:#F4F4F4;" >
-            <h2 style="display: inline-block;">{{'International Mountain Museum' | translate}}</h2>
+        <ion-row >
+            <div style="width: 100%; vertical-align: middle;">
+                <h2 style="text-align: center; color: #1C49AD">{{'International Mountain Museum' | translate}}</h2>
+            </div>
         </ion-row>
         <ion-row class="categories">
             <ion-col col-6 *ngFor="let categorie of categories" (click)="navigate(categorie.key)">

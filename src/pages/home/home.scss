@@ -1,6 +1,5 @@
 page-home {
   .title{
-    font-size: 16pt;
     font-family: "notoR";
   }
   .search{
@@ -10,9 +9,11 @@ page-home {
   /*slider*/
   .grid {
     padding: 0px;
-    h2{
-        font-size: 38pt;
+    p{
+        font-size: 16pt;
         font-family: "notoB";
+        text-align: center; 
+        color: #1C49AD
     }
     .slides {
       .overlay {

@@ -57,10 +57,9 @@ $dark-grey:#424242;
 $ionicons-font-path: "../assets/fonts";
 @import "ionic.ionicons";
 
-
 @font-face {
     font-family: 'notoB';
-    src: url("../assets/fonts/NotoSans-Bold.ttf") format('truetype');
+    src: url("../assets/fonts/NotoSansUI-Bold.ttf") format('truetype');
 
     font-family: 'notoR';
     src: url("../assets/fonts/NotoSans-Regular.ttf") format('truetype');

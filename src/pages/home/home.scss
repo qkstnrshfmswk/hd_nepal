@@ -1,4 +1,15 @@
 page-home {
+  
+@font-face {
+    font-family: 'notoB';
+    src: url("../assets/fonts/NotoSansUI-Bold.ttf") format('truetype');
+
+    font-family: 'notoR';
+    src: url("../assets/fonts/NotoSans-Regular.ttf") format('truetype');
+}
+*{
+  font-family:'notoB';
+}
   .title{
     font-family: "notoR";
   }
@@ -9,11 +20,14 @@ page-home {
   /*slider*/
   .grid {
     padding: 0px;
+
     p{
-        font-size: 16pt;
-        font-family: "notoB";
+      font-size: 16pt;
+        font-family: "notoB" !important;
         text-align: center; 
-        color: #1C49AD
+        color: #1C49AD;
+        font-weight : bold;
+         line-height: 0.8;
     }
     .slides {
       .overlay {
@@ -21,7 +35,7 @@ page-home {
         display: inline-flex;
       }
       .slider-img {
-        height: 220px;
+        height: 229px;
         width: 100%;
         position: relative;
         z-index: -111;
@@ -36,13 +50,31 @@ page-home {
     .categories {
       ion-col{
         background-color: #F4F4F4;
+        border : solid white;
+        border-width:1.5px;
       }
       img {
-        height: 110px;
+        height: 82px;
         position: relative;
         z-index: 1;
+        width: auto;
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:15px;
+        margin-bottom:10px;
+        padding-top:5px;
       }
-
+      figcaption{
+        margin-top:15px;
+        margin-bottom:20px;
+        font-size:15px;
+        font-weight:bold !important;
+        text-align:center;
+        color: #1C49AD;
+        font-family: "notoB" !important;
+      }
     }
   }
+
 }

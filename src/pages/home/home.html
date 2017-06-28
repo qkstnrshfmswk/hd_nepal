@@ -20,35 +20,28 @@
                 <p>{{'International Mountain Museum' | translate}}</p>
             </div>
         </ion-row>
-
+        <div>
         <ion-row class="categories">
+
             <ion-col (click)="navAbout()">
-                <figure>
                     <img src="assets\\img\\about-02.png"/>
                     <figcaption> About Museum </figcaption>
-                </figure>
             </ion-col>
             <ion-col (click)="navigate(categorie.key)">
-                <figure>
                     <img src="assets\\img\\Exhibition-02.png"/>
                     <figcaption> Exhibition </figcaption>
-                </figure>
             </ion-col>
         </ion-row>
         <ion-row class="categories">
             <ion-col (click)="navAbout()">
-                <figure>
                     <img src="assets\\img\\Map-02.png"/>
                     <figcaption>Map</figcaption>
-                </figure>
             </ion-col>
             <ion-col (click)="navigate(categorie.key)">
-                <figure>
                     <img src="assets\\img\\Facilities-02.png"/>
                     <figcaption> Facilities </figcaption>
-                </figure>
             </ion-col>
         </ion-row>
-
+        </div>
     </ion-grid>
 </ion-content>

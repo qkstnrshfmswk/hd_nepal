@@ -16,12 +16,11 @@
 <ion-content>
     <ion-grid class="grid">
         <ion-row><!-- first row -->
-            <ion-slides initialSlide=0 speed="3000" loop="true" pager="true">
-                <ion-slide *ngFor="let feature of featured">
-                    <div class="overlay">
-                        <img src={{feature.thumb}} class="slider-img">
-                    </div><!--overlay-->
-                    <div class="card-title">{{'Featured Product' | translate}}</div>
+            <ion-slides initialSlide=0 speed="500" loop="true" pager="true">
+                <ion-slide *ngFor="let img_list of main_img">
+                    
+                        <img src="{{img_list.img_path}}" class="slider-img">
+                
                 </ion-slide>
             </ion-slides>
         </ion-row><!-- first row -->

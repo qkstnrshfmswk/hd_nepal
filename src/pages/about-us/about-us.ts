@@ -2,7 +2,6 @@ import {Component,ViewChild} from '@angular/core';
 import {NavController, NavParams,IonicPage} from 'ionic-angular';
 import {Nav, Platform} from 'ionic-angular';
 import {Slides} from 'ionic-angular';
-import {CallNumber} from '@ionic-native/call-number';
 import { EmailComposer } from '@ionic-native/email-composer';
 import { Http } from '@angular/http';
 
@@ -11,7 +10,7 @@ import { Http } from '@angular/http';
 @Component({
   selector: 'page-about-us',
   templateUrl: 'about-us.html',
-  providers:[CallNumber,EmailComposer]
+  providers:[EmailComposer]
 })
 export class AboutUsPage {
 
@@ -26,7 +25,6 @@ export class AboutUsPage {
   constructor(public platform: Platform,
               public navCtrl: NavController,
               public navParams: NavParams,
-              public callNumber:CallNumber,
               public emailComposer:EmailComposer,
               public http:Http)
 {
@@ -59,9 +57,9 @@ export class AboutUsPage {
   }
 
   callUs() {
-      this.callNumber.callNumber(this.contactNo, true)
-    .then(() => console.log('Launched dialer!'))
-    .catch(() => console.log('Error launching dialer'));
+    //   this.callNumber.callNumber(this.contactNo, true)
+    // .then(() => console.log('Launched dialer!'))
+    // .catch(() => console.log('Error launching dialer'));
   }
 
    gotogoogleMap() {

@@ -20,7 +20,9 @@ export function createTranslateLoader(http: Http) {
         CategoryPage
     ],
     imports: [
-        IonicModule.forRoot(MyApp),
+        IonicModule.forRoot(MyApp, {
+            backButtonText: ''
+        },),
         IonicStorageModule.forRoot(),
         BrowserModule,
         HttpModule,

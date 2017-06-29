@@ -6,18 +6,16 @@ page-home {
   .search{
     width: 6%;
   }
-
   /*slider*/
   .grid {
     padding: 0px;
-
     p{
       font-size: 16pt;
-        font-family: "notoB" !important;
-        text-align: center; 
-        color: #1C49AD;
-        font-weight : bold;
-         line-height: 0.8;
+      font-family: "notoB";
+      text-align: center; 
+      color: #1C49AD;
+      font-weight : bold;
+      line-height: 0.8;
     }
     .slides {
       .overlay {
@@ -36,7 +34,6 @@ page-home {
     }
 
     /*Categories*/
-
     .categories {
       ion-col{
         background-color: #F4F4F4;
@@ -59,10 +56,9 @@ page-home {
         margin-top:15px;
         margin-bottom:20px;
         font-size:15px;
-        font-weight:bold !important;
         text-align:center;
         color: #1C49AD;
-        font-family: "notoB" !important;
+        font-family: "notoB";
       }
     }
   }

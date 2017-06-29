@@ -27,15 +27,16 @@ page-news {
     margin-top: 3px;
     font-family:"notoR";
   }
-  h2{
+  .h2{
+    font-family: "notoR";
     margin-bottom:8px !important;
     color:#1C49AD !important;
     font-size:12pt;
   }
 
   .exhibition-name{
-    font-weight:bold;
-    font-size:15pt;
+    font-family: "notoB";
+    font-size:14pt;
     color:black;
     line-height: 1;    //줄간격
   }

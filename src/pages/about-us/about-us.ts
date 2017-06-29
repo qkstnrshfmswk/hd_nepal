@@ -57,9 +57,11 @@ export class AboutUsPage {
   }
 
   callUs() {
+
     //   this.callNumber.callNumber(this.contactNo, true)
     // .then(() => console.log('Launched dialer!'))
     // .catch(() => console.log('Error launching dialer'));
+
   }
 
    gotogoogleMap() {

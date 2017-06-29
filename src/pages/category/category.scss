@@ -22,24 +22,37 @@ page-category {
     .card-title {
     font-family: "notoR";
     position: absolute;
-    top: 28%;
-    font-size: 20.5pt;
+    top: 19.4%;
     width: 100%;
     font-weight: bold;
     color:white;
     left: 21.5px;
   }
 
-  .card-subtitle{
-    font-family: "notoR";
-    position: absolute;
-    top: 28%;
-    font-size: 15pt;
-    width: 100%;
-    font-weight: bold;
-    color:white;
-    left: 21.5px;
+  .card-floor{
+    font-size: 13pt;
+    margin-top:0;
+    margin-bottom:3px;
+    padding: 0;
+
   }
+
+  .card-name{
+    font-size: 20pt;
+    padding: 0;
+    margin:0;
+    line-height: 1.1;
+  }
+
+  .card-img {
+    height: 227px;
+    width: 100%;
+    position: relative;
+    z-index: -111;
+    padding:0px;
+    margin:0px;
+  }
+
 
     .details {
     font-family: "notoR";
@@ -49,5 +62,5 @@ page-category {
     line-height: 1.3;    //줄간격
     text-align: justify;  //양쪽 정렬
   }
-  
+
 }

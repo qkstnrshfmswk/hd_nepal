@@ -15,9 +15,9 @@
 <ion-content>
 
     <img src="{{img}}" class="card-img">
-    <div class ="card-subtitle"> {{loc}}</div>
-       <div class="card-title">
-         <p *ngFor="let lines of name"> {{lines.line}} </p>
+      <div class="card-title">
+         <p class="card-floor"> {{loc}} </p>
+         <p class = "card-name" *ngFor="let lines of name"> {{lines.line}} </p>
       </div> 
 
 <!--about-->
@@ -25,7 +25,9 @@
     <p [innerHTML]="desc" class="details">
     	{{desc}}
     </p>
+</div>
 
-   </div> 
+
+ 
 </ion-content>
 

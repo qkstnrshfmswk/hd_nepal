@@ -1,0 +1,46 @@
+
+page-facility {
+
+  .title{
+    font-family: "notoR";
+  }
+  .search{
+    width: 6%;
+  }
+
+  .list-header{
+      font-family : "notoB";
+      font-size: 24pt;
+      font-weight: bold;
+      color: #1C49AD;
+      margin-top: 3px;
+      margin-bottom: 0px;
+      padding-bottom: 15px;
+      padding-left:14px;
+      border-bottom: solid 2px #1C49AD !important;
+  }
+
+  ion-list{
+        $item-detail-push-color:red;
+  }
+
+  button.item.item-block{
+       border-bottom:solid 1.5px #1C49AD !important;
+    
+  }
+
+  .scroll-content{
+      padding-left:0px !important;
+      padding-right:0px !important;
+  }
+
+  .input-wrapper{
+    padding-top: 9px;
+    padding-bottom:9px;
+    padding-left:14px;
+    font-size: 15pt;
+    color: #1C49AD;
+    font-weight: bold;
+  }
+
+}

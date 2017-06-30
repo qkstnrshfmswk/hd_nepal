@@ -1,0 +1,24 @@
+<!--
+  Generated template for the FacilityPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+        <ion-title class="title">IMM</ion-title>
+          <img align="right" src="assets/img/search.png" class="search" (click)="gotoSearch()">
+    </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+
+   <p class="list-header"> Facilities </p>
+<ion-list no-lines>
+  <button ion-item (click)="gotoSection(facility_list.facilities)" *ngFor="let facility_list of facility">
+       {{facility_list.facilities}}
+  </button>
+</ion-list>
+</ion-content>

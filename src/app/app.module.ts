@@ -9,6 +9,9 @@ import {TranslateModule, TranslateStaticLoader, TranslateLoader} from 'ng2-trans
 import {Http, HttpModule} from '@angular/http';
 import {BrowserModule} from "@angular/platform-browser";
 import { CategoryPage } from '../pages/category/category';
+import { FacilityPage } from '../pages/facility/facility';
+import { FacilityPageModule } from '../pages/facility/facility.module';
+import { FacilityDetailPageModule } from '../pages/facility-detail/facility-detail.module';
 //entry point에 추가
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, './assets/i18n', '.json');
@@ -25,6 +28,8 @@ export function createTranslateLoader(http: Http) {
         },),
         IonicStorageModule.forRoot(),
         BrowserModule,
+        FacilityPageModule,
+        FacilityDetailPageModule,
         HttpModule,
         TranslateModule.forRoot({
             provide: TranslateLoader,
@@ -32,13 +37,13 @@ export function createTranslateLoader(http: Http) {
             deps: [Http]
         })
 
-
     ],
     exports: [BrowserModule, HttpModule, TranslateModule],
     bootstrap: [IonicApp],
     entryComponents: [
         MyApp,
-        CategoryPage
+        CategoryPage,
+        FacilityPage
     ],
     providers: [
         {provide: ErrorHandler, useClass: IonicErrorHandler},

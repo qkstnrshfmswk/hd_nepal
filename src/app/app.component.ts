@@ -5,7 +5,7 @@ import {SplashScreen} from '@ionic-native/splash-screen';
 import {Service} from '../app/service';
 import {OneSignal} from '@ionic-native/onesignal';
 import {SocialSharing} from '@ionic-native/social-sharing';
-
+import { FacilityPage } from '../pages/facility/facility';
 
 @Component({
     templateUrl: 'app.html',

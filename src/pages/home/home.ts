@@ -4,7 +4,7 @@ import {Service} from '../../app/service';
 import { Http } from '@angular/http';
 import { AboutUsPage } from '../about-us/about-us';
 import { NewsPage } from '../news/news';
-
+import { FacilityPage } from '../facility/facility';
 
 @IonicPage()
 @Component({
@@ -67,6 +67,10 @@ export class HomePage {
 
    navExhibition(){
         this.navCtrl.push("NewsPage");
+    }
+
+    navFacility(){
+        this.navCtrl.push("FacilityPage");
     }
 
 }

@@ -27,7 +27,10 @@
     </p>
 </div>
 
-
- 
+<ion-list class="section-list">
+        <button color:primary ion-item (click)="gotoSection(categories.id)" *ngFor="let section_list of section">
+            <p class = "section-text"> {{section_list.section_num}}) {{section_list.section_name}} </p>
+        </button>
+</ion-list>
 </ion-content>
 

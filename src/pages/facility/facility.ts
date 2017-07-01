@@ -34,6 +34,16 @@ public facility:any;
     console.log('ionViewDidLoad FacilityPage');
   }
   gotoDetail(Type){
-
+    if(Type=="Library"){
+      this.navCtrl.push("FacilityLibraryPage", {
+        facilityType:Type});
+    }else if(Type == "Gokha Village Restaurant")
+    {
+      this.navCtrl.push("FacilityGokhaPage", {
+        facilityType:Type });
+    }else{
+      this.navCtrl.push("FacilityDetailPage", {
+        facilityType:Type});
+    }
   }
 }

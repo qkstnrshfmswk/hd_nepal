@@ -12,6 +12,9 @@ import { CategoryPage } from '../pages/category/category';
 import { FacilityPage } from '../pages/facility/facility';
 import { FacilityPageModule } from '../pages/facility/facility.module';
 import { FacilityDetailPageModule } from '../pages/facility-detail/facility-detail.module';
+import { FacilityGokhaPageModule } from '../pages/facility-gokha/facility-gokha.module';
+import { FacilityLibraryPageModule } from '../pages/facility-library/facility-library.module';
+
 //entry point에 추가
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, './assets/i18n', '.json');
@@ -30,6 +33,8 @@ export function createTranslateLoader(http: Http) {
         BrowserModule,
         FacilityPageModule,
         FacilityDetailPageModule,
+        FacilityGokhaPageModule,
+        FacilityLibraryPageModule,
         HttpModule,
         TranslateModule.forRoot({
             provide: TranslateLoader,
